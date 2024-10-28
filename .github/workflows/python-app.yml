@@ -16,6 +16,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+        pip install flake8 pytest
     - name: Test with unittest
       run: |
         python 17-Sets/test_assignment1.py
