@@ -1,11 +1,15 @@
 # inventory_system.py
 
-def create_inventory():
+def create_inventory(inventory, catagory, name, price, quantity):
     """
     Create and return an inventory using different dictionary creation methods,
     including dictionary comprehensions and dict() constructor.
     """
-    pass
+
+    items = dict.fromkeys(['name', 'price', 'quantity'], None)
+    inventory = dict(Electronics= [items],Groceries=[items])
+    return inventory
+
 
 def update_inventory(inventory, category, item_name, update_info):
     """
